@@ -18,7 +18,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: url("https://drive.google.com/thumbnail?id=18YGlepeGfoOf9gqEJkzkrjfdbl5CpBkw&sz=w1000");
+  background: url(./bg.png);
 }
 
 @layer utilities {

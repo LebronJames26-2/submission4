@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import { AnchorProvider, Program, web3 } from "@coral-xyz/anchor";
-import { PublicKey } from "@metaplex-foundation/js";
 
 const order_IDL = require('../app/idl.json');
 

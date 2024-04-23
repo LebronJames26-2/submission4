@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import React from 'react';
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Image from 'next/image'
+import logo from './logo.png';
+import Image from 'next/image';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +23,7 @@ export default function RootLayout({
       </head>
 
       <body className={inter.className}>
-      <Image src="/logo.png" width="400" alt="" />
+      <Image src={logo} width="400" alt="" />
       <p style={{fontSize:35}}> <b> The 32nd MATHirang MATHibay Merch Order Form </b> </p> 
 
         {children}

@@ -1,6 +1,10 @@
 "use client";
 import { useState } from "react";
 import { AnchorProvider, Program, web3 } from "@coral-xyz/anchor";
+import black from './MMM4.jpg';
+import white from './MMM5.jpg';
+import lanyard from './MMM3.jpg';
+import pin from './MMM2.jpg';
 import Image from 'next/image';
 
 const order_IDL = require('../app/idl.json');
@@ -145,7 +149,7 @@ export default function Home() {
       <input type="text" style={{color:"black"}} onChange={handleChangecontact} value={contact} /> 
       
       <br></br><br></br>
-      <Image src="/logo.png" width="400" alt="" />
+      <Image src={black} width="400" alt="" />
       
       <br></br>
       <p style={{fontSize:20}}> Black T-shirt Size: </p>
@@ -164,7 +168,7 @@ export default function Home() {
 
       
       <br></br>
-      <img src="https://drive.google.com/thumbnail?id=1pwaqWQBLasuMRaTE_uDanhQz0OjChVY7&sz=w1000" width={500}></img>
+      <Image src={white} width="400" alt="" />
       <br></br>
 
       <p style={{fontSize:20}}> White T-shirt Size: </p> 
@@ -182,14 +186,14 @@ export default function Home() {
       <input type="text" style={{color:"black"}} onChange={handleChangequanw} value={quanw} /> <br></br><br></br>
 
       <br></br>
-      <img src="https://drive.google.com/thumbnail?id=1DKg2MaQGWUgVPoyYB-wTvSyN6lJ2lDOh&sz=w1000" width={500}></img>
+      <Image src={lanyard} width="400" alt="" />
       <br></br>
 
       <p style={{fontSize:20}}> Reversible Lanyard Quantity: </p>
       <input type="text" style={{color:"black"}} onChange={handleChangequanl} value={quanl} /> <br></br><br></br>
 
       <br></br>
-      <img src="https://drive.google.com/thumbnail?id=1FfywK22tDsJlYFswOG0XeAAzQh0OWzgL&sz=w1000" width={500}></img>
+      <Image src={pin} width="400" alt="" />
       <br></br>
       <p style={{fontSize:20}}> Enamel Pin Quantity: </p>
       <input type="text" style={{color:"black"}} onChange={handleChangequanp} value={quanp} /> <br></br><br></br>

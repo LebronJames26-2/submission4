@@ -21,7 +21,7 @@ export default function RootLayout({
       </head>
 
       <body className={inter.className}>
-      <Image src="https://drive.google.com/thumbnail?id=1nFZ3D1e4TaiWeShsdzhn1YCF8Iz57CqN&sz=w1000" width="400" alt="" />
+      <img src="../app/logo.png" width="400px" alt=""></img>
       <p style={{fontSize:35}}> <b> The 32nd MATHirang MATHibay Merch Order Form </b> </p> 
 
         {children}

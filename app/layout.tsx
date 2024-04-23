@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Image from 'next/image'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +21,7 @@ export default function RootLayout({
       </head>
 
       <body className={inter.className}>
-      <img src="https://drive.google.com/thumbnail?id=1nFZ3D1e4TaiWeShsdzhn1YCF8Iz57CqN&sz=w1000" width="400px"></img>
+      <Image src="https://drive.google.com/thumbnail?id=1nFZ3D1e4TaiWeShsdzhn1YCF8Iz57CqN&sz=w1000" width="400" alt="" />
       <p style={{fontSize:35}}> <b> The 32nd MATHirang MATHibay Merch Order Form </b> </p> 
 
         {children}

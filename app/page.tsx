@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { AnchorProvider, Program, web3 } from "@coral-xyz/anchor";
+import Image from 'next/image';
 
 const order_IDL = require('../app/idl.json');
 
@@ -144,7 +145,7 @@ export default function Home() {
       <input type="text" style={{color:"black"}} onChange={handleChangecontact} value={contact} /> 
       
       <br></br><br></br>
-      <img src="https://drive.google.com/thumbnail?id=1Zbi643T8LOtooodmUuUOHSf51ss0kpJ9&sz=w1000" width={500}></img> 
+      <Image src="/logo.png" width="400" alt="" />
       
       <br></br>
       <p style={{fontSize:20}}> Black T-shirt Size: </p>
